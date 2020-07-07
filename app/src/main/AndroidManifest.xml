@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.insta_fit">
+
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Insta-Fit"
+        android:roundIcon="@drawable/run1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HowActive"></activity>
+        <activity android:name=".NewFood" />
+        <activity android:name=".ReferenceLinks" />
+        <activity android:name=".PlayVideos" />
+        <activity android:name=".SetTargets" />
+        <activity android:name=".CheckCaloryStats" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".AboutApp" />
+        <activity android:name=".FinalHomeActivity" />
+        <activity android:name=".Sliding_Bar" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Login_Form" />
+        <activity android:name=".Signup_Form" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

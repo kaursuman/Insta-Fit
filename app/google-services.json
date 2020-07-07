@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "436869481236",
+    "firebase_url": "https://insta-fit-e7311.firebaseio.com",
+    "project_id": "insta-fit-e7311",
+    "storage_bucket": "insta-fit-e7311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436869481236:android:59b38ff2dd85ec9ebd7801",
+        "android_client_info": {
+          "package_name": "com.example.insta_fit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436869481236-qol18jol0irj3uro2sprcu7u5b5th9i8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.insta_fit",
+            "certificate_hash": "f8691817eb5e813bead5aff5398c29a4c6448c17"
+          }
+        },
+        {
+          "client_id": "436869481236-3vfakdqblgjhn5tdahgf72savpa1lhkh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzjnvd-Ozps_aP6mGL6MAaZTFLYiIwT3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436869481236-3vfakdqblgjhn5tdahgf72savpa1lhkh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AEF4FA"
+    tools:context=".CheckCaloryStats">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="#f9f9f7"
+        android:text="Daily Calory Report"
+        android:textColor="@color/active_dot"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Hello"
+        android:textStyle="bold"
+        android:textColor="#77183C"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Eat this much"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmiText" />
+
+    <TextView
+        android:id="@+id/currentCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:text="What you ate"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recCalories" />
+
+    <TextView
+        android:id="@+id/burnedCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Calories burned"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressMessage" />
+
+    <TextView
+        android:id="@+id/progressMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="You can do it"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/active_dot"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentCalories" />
+
+    <TextView
+        android:id="@+id/bmiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="BMI goes here"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetingText" />
+
+    <Button
+        android:id="@+id/addfood"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="68dp"
+        android:onClick="addFood"
+        android:text="Eat Something?"
+        android:textSize="15sp"
+        android:textColor="@color/active_dot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/cardview_dark_background"/>
+
+    <Button
+        android:id="@+id/runButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:onClick="button5"
+        android:text="Let's Run!!"
+        android:visibility="visible"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addfood"
+        android:textColor="@color/active_dot"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/cardview_dark_background"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
